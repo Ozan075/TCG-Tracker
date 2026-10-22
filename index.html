@@ -153,9 +153,31 @@ td.name-cell{min-width:240px}
   .kpi:nth-child(odd){border-left:0;padding-left:0}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+
+/* Responsive collection workspace */
+:root{--muted:#a1aec2;--field:#142a45;--field-line:#355477}
+html{scroll-padding-top:100px} body{background:radial-gradient(ellipse at 90% 0%,#162b43 0,transparent 48%),var(--abyss)}
+button,input,select{min-height:44px}button{touch-action:manipulation}.btn:disabled{opacity:.4;cursor:default}
+.skip{position:fixed;top:-100px;left:16px;z-index:100;background:var(--green);color:#06281c;padding:12px}.skip:focus{top:12px}
+.top-in,main{max-width:1480px}.top-in{min-height:72px}.brand{white-space:nowrap}.top-note{font-size:12px}
+.page-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:4px 0 24px}.page-heading h1{font-size:28px;letter-spacing:-.03em;margin:0 0 4px}.page-heading p{margin:0;color:var(--muted);font-size:14px}
+.eyebrow{color:var(--green);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin-bottom:5px}
+.hero{padding:32px;background:linear-gradient(120deg,#172f43,#101e33);border-color:#335069;box-shadow:0 12px 40px #0002}.hero>div{min-width:0}.hero-num{font-size:clamp(36px,5.8vw,76px);overflow-wrap:anywhere}.hero-label{color:#c3d0df}
+.kpis{grid-template-columns:repeat(6,minmax(0,1fr));background:#101d33;border:1px solid var(--line);border-radius:12px;margin:20px 0 28px}.kpi,.kpi:first-child{padding:18px 16px}.kpi dd{font-size:21px;white-space:normal;overflow-wrap:anywhere}.kpi dd small{margin-top:5px;white-space:normal}.cols{gap:20px}.cols>*{min-width:0}.panel{padding:20px}.panel h2{font-size:17px;margin-bottom:16px}.group-scroll{overflow:auto;overscroll-behavior-x:contain}.grp{min-width:510px}.legend{flex-wrap:wrap;gap:6px 16px}.legend span:last-child{flex-basis:100%;font-size:11px}.bars{width:64px;min-width:64px}.top5 .m{overflow-wrap:anywhere}
+.toolbar{background:var(--navy);border:1px solid var(--line);padding:14px;border-radius:12px;gap:12px}.toolbar .sf{min-width:0;flex:1 1 180px}.toolbar #f-q{flex:2 1 280px;min-width:0!important}.toolbar .grow{display:none}.toolbar .chk{font-size:13px}.toolbar #b-add{margin-left:auto}.filter-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:12px 0}.meta{margin:0}.filter-reset{color:var(--green);background:none;border:0;cursor:pointer;font-size:13px;padding:4px 8px}.mobile-sort{display:none}.tablewrap{max-height:65vh;min-height:180px;overscroll-behavior:contain}.cards td{padding:8px}.cards th button{min-height:48px}.cards th button:focus-visible{outline:2px solid var(--green);outline-offset:-3px}.in{padding:9px 10px}.del{min-width:44px}.cards td.sticky{box-shadow:2px 0 0 var(--line)}
+.data-tools{margin-top:24px;background:var(--navy);border:1px solid var(--line);border-radius:12px;padding:16px}.data-tools summary{cursor:pointer;font-weight:600;min-height:28px}.data-tools .btn-row{margin-top:16px!important;gap:8px}.data-tools p{font-size:13px;color:var(--muted);margin:12px 0 0}.foot{margin-top:20px}.save-state{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)}.save-state::before{content:'';width:6px;height:6px;background:var(--green);border-radius:50%}.save-state.error::before{background:var(--red)}
+#toast{max-width:calc(100vw - 24px);width:max-content;bottom:max(20px,env(safe-area-inset-bottom));font-size:14px}#toast button{flex-shrink:0}.empty{padding:64px 24px}.note{line-height:1.7}.lrow{grid-template-columns:100px minmax(20px,1fr) auto}.lrow b{min-width:0}
+@media(max-width:1100px){.kpis{grid-template-columns:repeat(3,minmax(0,1fr))}.kpi:nth-child(3n+1){border-left:0}.kpi:nth-child(n+4){border-top:1px solid var(--line)}.cols{grid-template-columns:1fr}.toolbar #b-add{margin-left:0}}
+@media(max-width:700px){
+ .top-in{flex-wrap:wrap;gap:8px;padding:12px 16px 0;min-height:unset}.brand{font-size:17px;flex:1}.top-note{display:none}.tabs{width:100%;gap:0}.tab{flex:1;border-radius:8px 8px 0 0;padding:10px}.top{position:sticky}.page-heading{align-items:flex-start;margin-bottom:18px;flex-wrap:wrap}.page-heading h1{font-size:25px}.page-heading p{font-size:13px}.page-heading .btn{font-size:13px}.page-heading .eyebrow{font-size:10px}main{padding:20px 14px 40px}.hero{padding:22px 18px;gap:24px}.hero-num{font-size:clamp(32px,9vw,52px)}.hero-sub{font-size:13px}.lrow{gap:8px}.lrow span,.lrow b{font-size:12px}.lbar{height:8px}.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi,.kpi:first-child{padding:14px 12px;border-left:0}.kpi:nth-child(even){border-left:1px solid var(--line)}.kpi:nth-child(n+3){border-top:1px solid var(--line)}.kpi dd{font-size:20px}.kpi dt{font-size:12px}.panel{padding:16px}.legend{font-size:12px}.grp{font-size:12px;min-width:480px}.grp th{font-size:11px}.toolbar{display:grid;grid-template-columns:1fr 1fr;padding:12px;gap:10px}.toolbar #f-q{grid-column:1/-1}.toolbar .sf{width:100%;font-size:16px;padding:10px}.toolbar .chk{grid-column:1/-1;min-height:36px}.toolbar #b-add{grid-column:1/-1}.filter-bottom{align-items:flex-start}.meta .key{display:none}.mobile-sort{display:flex;gap:8px;align-items:center;margin-bottom:14px}.mobile-sort select{flex:1;min-width:0;font-size:14px}.tablewrap{max-height:none;min-height:0;border:0;overflow:visible;background:none}.cards{display:block;min-width:0;width:100%}.cards thead{display:none}.cards tbody{display:grid;gap:16px}.cards tr{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;padding:16px;background:var(--navy);border:1px solid #31445c;border-radius:14px;position:relative}.cards td{display:flex;flex-direction:column;min-width:0;border:0;padding:0!important;text-align:left!important;gap:5px}.cards td::before{content:attr(data-label);font-size:11px;color:var(--muted);font-weight:500}.cards td.sticky{position:static;background:none!important;box-shadow:none;min-width:0}.cards td:first-child{grid-column:1/-1;padding-right:36px!important}.cards td:first-child input{font-size:17px;font-weight:600}.cards .in{width:100%;min-width:0!important;font-size:16px;min-height:46px}.cards td.calc{background:#0a142480;padding:10px!important;border-radius:8px;font-size:16px;white-space:normal;overflow-wrap:anywhere}.cards td:nth-child(10){grid-column:1/-1}.cards td:last-child:not([colspan]){position:absolute;right:10px;top:14px}.cards td:last-child::before{display:none}.cards td[colspan]{grid-column:1/-1;padding:20px!important}.cards td[colspan]::before{display:none}.cards tr:hover td{background-color:transparent}.cards tr:hover td.calc{background:#0a142480}.pager{font-size:13px;gap:8px}.data-tools .btn-row{display:grid;grid-template-columns:1fr 1fr}.data-tools .btn{padding:8px;font-size:12px}.foot{font-size:12px}.empty{padding:32px 18px}.empty h1{font-size:23px}ol.top5 .t{white-space:normal}.rowmiss{font-size:13px}
+}
+
+.account-panel{padding:16px 18px;margin:0 0 22px;background:var(--navy);border:1px solid #35516c;border-radius:12px;display:flex;flex-wrap:wrap;align-items:center;gap:12px}.account-copy{flex:1;min-width:180px}.account-copy strong{display:block;overflow-wrap:anywhere}.account-copy p{font-size:13px;color:var(--muted);margin:4px 0}.account-actions{display:flex;gap:8px;flex-wrap:wrap}.account-actions .btn{font-size:13px}.cloud-status{flex-basis:100%;font-size:12px;color:var(--muted)}.conflict{margin:0 0 20px;border:1px solid var(--amber);border-radius:12px;padding:16px;background:#312a19}.conflict p{margin:0 0 12px}.conflict .btn-row{justify-content:flex-start}#collection-content[inert]{opacity:.5;pointer-events:none}dialog{width:min(440px,calc(100vw - 24px));max-height:90dvh;overflow:auto;background:var(--navy);color:var(--text);border:1px solid #425e7b;border-radius:16px;padding:24px;box-shadow:0 20px 80px #0008}dialog::backdrop{background:#030911c9;backdrop-filter:blur(4px)}.auth-heading{display:flex;justify-content:space-between;align-items:start;gap:12px}.auth-heading h2{font-size:21px}.auth-heading button{background:none;border:0;cursor:pointer;min-width:44px;font-size:22px}.auth-field{display:grid;gap:6px;margin-bottom:16px;font-size:14px}.auth-field input{font-size:16px}.auth-buttons{display:grid;gap:10px}.auth-note{color:var(--muted);font-size:12px}.auth-message{color:var(--amber);font-size:14px;overflow-wrap:anywhere}#auth-forgot{color:var(--green);background:none;border:0;cursor:pointer}.account-panel button:disabled{opacity:.4}
+@media(max-width:700px){.account-panel{padding:14px}.account-actions{width:100%}.account-actions .btn{flex:1}.auth-heading h2{font-size:19px}.conflict .btn-row{display:grid;grid-template-columns:1fr}.conflict .btn{font-size:13px}}
 </style>
 </head>
 <body>
+<a href="#main" class="skip">Naar inhoud</a>
 <header class="top">
   <div class="top-in">
     <div class="brand">
@@ -166,19 +188,22 @@ td.name-cell{min-width:240px}
       <button class="tab" role="tab" id="tab-dashboard" data-view="dashboard" aria-selected="true">Dashboard</button>
       <button class="tab" role="tab" id="tab-kaarten" data-view="kaarten" aria-selected="false">Kaarten<span class="count num" id="tabcount"></span></button>
     </nav>
-    <span class="top-note">Gegevens staan alleen in deze browser</span>
+    <span class="top-note">Jouw persoonlijke kaartencollectie</span>
   </div>
 </header>
 
-<main>
+<main id="main">
+  <section class="account-panel" aria-label="Account en online opslag"><div class="account-copy"><strong id="account-name">Collectie laden…</strong><p id="account-description">Je account controleren.</p></div><div class="account-actions"><button class="btn primary" id="account-login">Inloggen / registreren</button><button class="btn" id="account-migrate" hidden>Lokale kaarten overzetten</button><button class="btn" id="account-refresh" hidden>Vernieuwen</button><button class="btn" id="account-logout" hidden>Uitloggen</button><button class="btn" id="cloud-retry" hidden>Opnieuw proberen</button></div><span class="cloud-status" id="cloud-status" role="status" aria-live="polite">Verbinding controleren…</span></section>
+  <div id="cloud-conflict" class="conflict" hidden><p><strong>Er zijn twee versies van je collectie.</strong> Je wijzigingen op dit apparaat zijn bewaard. Kies welke versie je wilt gebruiken. Voor het vervangen wordt een back-up gedownload.</p><div class="btn-row"><button class="btn" id="conflict-backup">Back-up van mijn versie</button><button class="btn" id="conflict-online">Online versie laden</button><button class="btn" id="conflict-local">Mijn versie online opslaan</button></div></div>
   <div id="storewarn" class="warn" hidden>Opslaan in deze browser lukt niet (privémodus of geblokkeerde opslag). Je wijzigingen gaan verloren bij sluiten. Maak een back-up via Kaarten.</div>
 
+  <div id="collection-content">
   <section id="view-dashboard" role="tabpanel" aria-labelledby="tab-dashboard">
-    <div id="dash"></div>
+    <div class="page-heading"><div><div class="eyebrow">Jouw collectie in beeld</div><h1>Collectieoverzicht</h1><p>Inzicht in je investering, grading en potentiële winst.</p></div><button class="btn primary" data-act="add">+ Nieuwe kaart</button></div><div id="dash"></div>
   </section>
 
   <section id="view-kaarten" role="tabpanel" aria-labelledby="tab-kaarten" hidden>
-    <div class="toolbar">
+    <div class="page-heading"><div><div class="eyebrow">Beheer je collectie</div><h1>Mijn kaarten</h1><p>Voer bedragen in; kosten, winst en rendement worden berekend.</p></div><span id="save-state" class="save-state" role="status">Automatisch opslaan</span></div><div class="toolbar">
       <input class="sf" type="search" id="f-q" placeholder="Zoek op naam, grade of notitie" aria-label="Zoeken" style="min-width:240px">
       <select class="sf" id="f-status" aria-label="Filter op gradingstatus"></select>
       <select class="sf" id="f-grade" aria-label="Filter op grade"></select>
@@ -186,12 +211,14 @@ td.name-cell{min-width:240px}
       <span class="grow"></span>
       <button class="btn primary" id="b-add">Nieuwe kaart</button>
     </div>
-    <div class="meta">
+    <div class="filter-bottom"><div class="meta">
       <span id="rowinfo"></span>
       <span class="key"><i class="sw i"></i>Invoerveld</span>
       <span class="key"><i class="sw c"></i>Berekend</span>
     </div>
-    <div class="tablewrap">
+    <button class="filter-reset" id="b-reset" hidden>Filters wissen</button></div>
+    <div class="mobile-sort"><label for="m-sort">Sorteer op</label><select id="m-sort" class="sf"><option value="">Invoervolgorde</option><option value="naam">Kaartnaam</option><option value="inkoop">Inkoopprijs</option><option value="grading">Gradingkosten</option><option value="grade">Grade</option><option value="cost">Totale kosten</option><option value="slab">Slab waarde</option><option value="winst">Winst</option><option value="rend">Rendement</option><option value="status">Gradingstatus</option><option value="notities">Notities</option></select><button class="btn" id="m-dir" aria-label="Sorteerrichting omkeren">↑</button></div>
+    <div class="tablewrap" tabindex="0" role="region" aria-label="Kaartenoverzicht">
       <table class="cards" id="tbl">
         <thead><tr>
           <th class="sticky in-h" data-k="naam"><button>Kaartnaam<span class="ar"></span></button></th>
@@ -210,21 +237,24 @@ td.name-cell{min-width:240px}
       </table>
     </div>
     <div class="pager" id="pager"></div>
-    <div class="btn-row" style="margin-top:28px;justify-content:flex-start">
+    <details class="data-tools"><summary>Back-up, import en collectiebeheer</summary><p>Bewaar een JSON-back-up om al je kaarten en waarden veilig te stellen.</p><div class="btn-row" style="margin-top:28px;justify-content:flex-start">
       <button class="btn" id="b-csv">Exporteer CSV</button>
       <button class="btn" id="b-json">Back-up (JSON)</button>
       <button class="btn" id="b-import">Importeer CSV of back-up</button>
       <button class="btn" id="b-demo">Voorbeeldkaarten laden</button>
       <button class="btn danger" id="b-clear">Alles wissen</button>
     </div>
-    <p class="foot">Winst = slab waarde min totale cost, waarbij totale cost = inkoopprijs plus gradingcost. Een kaart zonder slab waarde krijgt geen winst en telt niet mee als €0 in het dashboard. Gegevens blijven in de opslag van deze browser: maak regelmatig een back-up.</p>
+    </details><p class="foot">Winst = slab waarde min totale cost, waarbij totale cost = inkoopprijs plus gradingcost. Een kaart zonder slab waarde krijgt geen winst en telt niet mee als €0 in het dashboard. Na inloggen worden je kaarten online opgeslagen. Zonder account staan ze alleen op dit apparaat. Maak regelmatig een back-up.</p>
   </section>
+</div>
 </main>
 
+<dialog id="auth-dialog" aria-labelledby="auth-title"><form id="auth-form"><div class="auth-heading"><h2 id="auth-title">Inloggen of account maken</h2><button type="button" id="auth-close" aria-label="Sluiten">×</button></div><p class="auth-note">Bewaar je collectie online en open deze op ieder apparaat.</p><input type="hidden" id="auth-mode" value="login"><label class="auth-field" id="auth-email-wrap">E-mailadres<input type="email" class="in" id="auth-email" autocomplete="email" required></label><label class="auth-field">Wachtwoord<input type="password" class="in" id="auth-password" autocomplete="current-password" required></label><p id="auth-message" class="auth-message" role="status" aria-live="polite"></p><div class="auth-buttons"><button class="btn primary" type="submit" id="auth-submit">Inloggen</button><button class="btn" type="button" id="auth-signup">Nieuw account maken</button><button type="button" id="auth-forgot">Wachtwoord vergeten?</button></div></form></dialog>
 <div id="toast" role="status" hidden></div>
 <input type="file" id="file" accept=".csv,.json,.txt,text/csv,application/json" hidden>
 <datalist id="grades"></datalist>
 
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.js" defer></script>
 <script>
 "use strict";
 const STATUSES=["Niet ingestuurd","Voorbereiden","Verzonden","In behandeling","Terugontvangen"];
@@ -237,7 +267,7 @@ let storeOK=true;
 function uid(){return (crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2))}
 function norm(c){
   const num=v=>(v===null||v===undefined||v===""||!isFinite(Number(v))||Number(v)<0)?null:Number(v);
-  return {id:c.id||uid(),naam:String(c.naam??""),inkoop:num(c.inkoop),grading:num(c.grading),grade:String(c.grade??""),
+  return {id:String(c.id||uid()),naam:String(c.naam??""),inkoop:num(c.inkoop),grading:num(c.grading),grade:String(c.grade??""),
           slab:num(c.slab),status:STATUSES.includes(c.status)?c.status:"Niet ingestuurd",notities:String(c.notities??"")};
 }
 function load(){
@@ -246,7 +276,7 @@ function load(){
   return [];
 }
 let saveT=0;
-function save(){clearTimeout(saveT);saveT=setTimeout(()=>{try{localStorage.setItem(KEY,JSON.stringify(cards));storeOK=true}catch(e){storeOK=false}$("#storewarn").hidden=storeOK},200)}
+function save(){saveCollection()}
 let cards=load();
 const ui={view:"dashboard",q:"",status:"",grade:"",noval:false,sort:null,page:1};
 
@@ -273,8 +303,12 @@ function parseMoney(s){
   s=String(s).replace(/[€\s\u00a0]/g,"");
   if(s==="")return null;
   if(!/^[\d.,]+$/.test(s))return NaN;
-  if(s.includes(","))s=s.replace(/\./g,"").replace(",",".");
+  if(s.includes(",")){
+    if(!/^(?:\d+|\d{1,3}(?:\.\d{3})+),\d{1,2}$/.test(s))return NaN;
+    s=s.replace(/\./g,"").replace(",",".");
+  }
   else if(/^\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,"");
+  if(!/^\d+(?:\.\d{1,2})?$/.test(s))return NaN;
   const n=Number(s);return isFinite(n)?n:NaN;
 }
 
@@ -293,10 +327,10 @@ function groupTable(first,groups,total){
       <td>${cell(s,"cost",x=>eur(x.cost))}</td><td>${cell(s,"slab",x=>eur(x.slab))}</td>
       <td class="${s.valuedN?sc(s.winst):''}">${cell(s,"winst",x=>eur(x.winst))}</td><td>${bars}</td></tr>`}).join("");
   const t=total;
-  return `<table class="grp"><thead><tr><th>${first}</th><th>Aantal</th><th>Totale cost</th><th>Slab waarde</th><th>Winst</th><th></th></tr></thead>
+  return `<div class="group-scroll" tabindex="0" role="region" aria-label="Overzicht per ${first}"><table class="grp"><thead><tr><th>${first}</th><th>Aantal</th><th>Totale cost</th><th>Slab waarde</th><th>Winst</th><th></th></tr></thead>
    <tbody>${body}</tbody>
    <tfoot><tr><td>Totaal</td><td>${t.n}</td><td>${eur(t.cost)}</td><td>${cell(t,"slab",x=>eur(x.slab))}</td>
-   <td class="${t.valuedN?sc(t.winst):''}">${cell(t,"winst",x=>eur(x.winst))}</td><td></td></tr></tfoot></table>`;
+   <td class="${t.valuedN?sc(t.winst):''}">${cell(t,"winst",x=>eur(x.winst))}</td><td></td></tr></tfoot></table></div>`;
 }
 function topList(list,dir){
   const items=list.filter(c=>c.slab!=null).map(c=>({c,k:calc(c)})).filter(x=>dir>0?x.k.winst>0.004:x.k.winst<-0.004)
@@ -377,7 +411,7 @@ function calcCells(c){
 }
 function rowHTML(c){
   const k=calcCells(c);
-  return `<tr data-id="${c.id}">
+  return `<tr data-id="${esc(c.id)}">
   <td class="sticky name-cell"><input class="in" data-f="naam" value="${esc(c.naam)}" placeholder="Kaartnaam" aria-label="Kaartnaam" autocomplete="off"></td>
   <td><input class="in money" data-f="inkoop" data-m inputmode="decimal" value="${esc(moneyStr(c.inkoop))}" placeholder="€ 0,00" aria-label="Inkoopprijs incl" style="min-width:110px"></td>
   <td><input class="in money" data-f="grading" data-m inputmode="decimal" value="${esc(moneyStr(c.grading))}" placeholder="€ 0,00" aria-label="Gradingcost" style="min-width:100px"></td>
@@ -401,6 +435,10 @@ function renderTable(keepFocus){
     th.querySelector(".ar").textContent=on?(ui.sort.dir>0?"▲":"▼"):"▲";
   });
   $("#pager").innerHTML=pages>1?`<button class="btn" data-pg="-1" ${ui.page<=1?"disabled":""}>Vorige</button><span class="num">Pagina ${ui.page} van ${pages}</span><button class="btn" data-pg="1" ${ui.page>=pages?"disabled":""}>Volgende</button>`:"";
+  const labels=["Kaartnaam","Inkoopprijs incl.","Gradingkosten","Kaart grade","Totale kosten","Slab waarde","Winst","Rendement","Gradingstatus","Notities",""];
+  document.querySelectorAll("#tbody tr").forEach(tr=>[...tr.children].forEach((td,i)=>{td.dataset.label=labels[i]||""}));
+  $("#b-reset").hidden=!(ui.q||ui.status||ui.grade||ui.noval);
+  $("#m-sort").value=ui.sort?.k||"";$("#m-dir").textContent=ui.sort?.dir===-1?"\u2193":"\u2191";$("#m-dir").disabled=!ui.sort;
   updateInfo(a.length);
   refreshLists();
 }
@@ -411,7 +449,7 @@ function updateInfo(vis){
   $("#rowinfo").textContent=vis===cards.length?`${cards.length} ${cards.length===1?"rij":"rijen"}`:`${vis} van ${cards.length} rijen`;
 }
 function refreshLists(){
-  const used=[...new Set(cards.map(c=>c.grade.trim()).filter(Boolean))];
+  const used=[...new Set([...cards.map(c=>c.grade.trim()).filter(Boolean),...(ui.grade&&ui.grade!=="__none"?[ui.grade]:[])])];
   const all=[...new Set([...GRADES,...used])];
   $("#grades").innerHTML=all.map(g=>`<option value="${esc(g)}">`).join("");
   const fs=$("#f-status"),fg=$("#f-grade");
@@ -419,7 +457,7 @@ function refreshLists(){
   fg.innerHTML='<option value="">Alle grades</option><option value="__none"'+(ui.grade==="__none"?" selected":"")+'>Geen grade</option>'+used.sort((a,b)=>a.localeCompare(b,"nl",{numeric:true})).map(g=>`<option${ui.grade===g?" selected":""}>${esc(g)}</option>`).join("");
 }
 function updateRow(id){
-  const c=cards.find(x=>x.id===id),tr=$(`#tbody tr[data-id="${id}"]`);if(!c||!tr)return;
+  const c=cards.find(x=>x.id===id),tr=[...document.querySelectorAll("#tbody tr[data-id]")].find(el=>el.dataset.id===id);if(!c||!tr)return;
   const k=calcCells(c);
   for(const key of ["cost","winst","rend"])tr.querySelector(`[data-c="${key}"]`).innerHTML=k[key];
 }
@@ -452,6 +490,7 @@ $("#tbody").addEventListener("focusin",e=>{
 $("#tbody").addEventListener("focusout",e=>{
   const t=e.target;if(!t.hasAttribute||!t.hasAttribute("data-m"))return;
   const c=cards.find(x=>x.id===t.closest("tr").dataset.id);
+  if(t.getAttribute("aria-invalid")==="true")toast("Ongeldig bedrag. Gebruik bijvoorbeeld 12,50. De vorige waarde is behouden.");
   t.removeAttribute("aria-invalid");if(c)t.value=moneyStr(c[t.dataset.f]);
 });
 $("#tbody").addEventListener("click",e=>{
@@ -474,11 +513,13 @@ $("#f-grade").addEventListener("change",e=>{ui.grade=e.target.value;ui.page=1;re
 $("#f-noval").addEventListener("change",e=>{ui.noval=e.target.checked;ui.page=1;renderTable()});
 function resetFilters(){Object.assign(ui,{q:"",status:"",grade:"",noval:false,page:1});$("#f-q").value="";$("#f-noval").checked=false}
 function addCard(){
+  if(!canEdit())return;
   resetFilters();ui.sort=null;
   cards.unshift(norm({}));save();show("kaarten");
   const i=$("#tbody tr input");if(i)i.focus();
 }
 function demo(){
+  if(!canEdit())return;
   const d=[["Charizard ex 199/165 (151)",62.5,null,"BGS 9.5",285,"Terugontvangen"],["Umbreon VMAX 215/203 (Evolving Skies)",395,null,"BGS 9.5",410,"Terugontvangen"],
     ["Lugia V 186/195 (Silver Tempest)",38,null,"BGS 9.5",75,"In behandeling"],["Mew ex 232/091 (Paldean Fates)",22,18.5,"BGS 10",null,"Verzonden"],
     ["Gengar VMAX 271/264 (Fusion Strike)",55,null,"",null,"Niet ingestuurd"]];
@@ -490,6 +531,9 @@ document.addEventListener("click",e=>{
   const a=e.target.closest("[data-act]");if(!a)return;
   ({add:addCard,demo,import:()=>$("#file").click(),"show-missing":showMissing})[a.dataset.act]?.();
 });
+$("#b-reset").onclick=()=>{resetFilters();renderTable()};
+$("#m-sort").onchange=e=>{ui.sort=e.target.value?{k:e.target.value,dir:1}:null;ui.page=1;renderTable()};
+$("#m-dir").onclick=()=>{if(ui.sort){ui.sort.dir*=-1;ui.page=1;renderTable()}};
 $("#b-add").onclick=addCard;$("#b-demo").onclick=demo;$("#b-import").onclick=()=>$("#file").click();
 $("#b-clear").onclick=()=>{
   if(!cards.length)return;
@@ -522,6 +566,7 @@ function parseCSV(text){
     else if(ch===d){row.push(cell);cell=""}
     else if(ch==="\n"||ch==="\r"){if(ch==="\r"&&text[i+1]==="\n")i++;row.push(cell);rows.push(row);row=[];cell=""}
     else cell+=ch;}
+  if(q)throw new Error("Een aanhalingsteken in het CSV-bestand is niet afgesloten.");
   if(cell!==""||row.length){row.push(cell);rows.push(row)}
   return rows.filter(r=>r.some(x=>x.trim()!==""));
 }
@@ -534,19 +579,21 @@ function fromCSV(text){
   const out=[];
   for(const r of rows.slice(1)){const o={};
     cols.forEach((f,i)=>{if(!f)return;const v=(r[i]??"").trim();
-      if(["inkoop","grading","slab"].includes(f)){const n=parseMoney(v);o[f]=Number.isNaN(n)?null:n}
+      if(["inkoop","grading","slab"].includes(f)){const n=parseMoney(v);if(Number.isNaN(n))throw new Error("Ongeldig bedrag bij kaart: "+(r[cols.indexOf("naam")]||"onbekend"));o[f]=n}
       else if(f==="status"){o.status=STATUSES.find(s=>s.toLowerCase()===v.toLowerCase())||"Niet ingestuurd"}
       else o[f]=v;});
     if((o.naam||"").trim())out.push(norm(o));}
   return out;
 }
 $("#file").addEventListener("change",async e=>{
-  const f=e.target.files[0];e.target.value="";if(!f)return;
+  const f=e.target.files[0];e.target.value="";if(!f||!canEdit())return;const importEpoch=cloud.epoch;
   try{
-    const text=await f.text();
+    const text=await f.text();if(importEpoch!==cloud.epoch||!canEdit())return;
     if(f.name.toLowerCase().endsWith(".json")||text.trim().startsWith("{")||text.trim().startsWith("[")){
       const j=JSON.parse(text),arr=Array.isArray(j)?j:j.cards;if(!Array.isArray(arr))throw new Error("Geen geldige back-up.");
-      const inc=arr.map(norm);
+      if(arr.some(c=>!c||typeof c!=="object"||Array.isArray(c)))throw new Error("De back-up bevat ongeldige kaarten.");
+      if(arr.some(c=>["inkoop","grading","slab"].some(k=>c[k]!=null&&c[k]!==""&&(!Number.isFinite(Number(c[k]))||Number(c[k])<0))))throw new Error("De back-up bevat ongeldige bedragen.");
+      const inc=arr.map(norm);const seen=new Set();for(const c of inc){c.id=String(c.id);if(seen.has(c.id))c.id=uid();seen.add(c.id)}
       if(!confirm(`Back-up met ${inc.length} rijen gevonden. Je huidige ${cards.length} rijen worden vervangen. Doorgaan?`))return;
       const old=cards;cards=inc;save();resetFilters();renderTable();renderDash();toast(`${inc.length} rijen hersteld`,"Ongedaan maken",()=>{cards=old;save();renderTable();renderDash()});
     }else{
@@ -561,21 +608,184 @@ $("#file").addEventListener("change",async e=>{
 let toastT=0;
 function toast(msg,label,fn){
   const t=$("#toast");t.innerHTML=`<span>${esc(msg)}</span>`;
-  if(label){const b=document.createElement("button");b.textContent=label;b.onclick=()=>{fn();t.hidden=true};t.appendChild(b)}
+  if(label){const owner=cloud.user?.id||null;const b=document.createElement("button");b.textContent=label;b.onclick=()=>{if(owner!==(cloud.user?.id||null))return;fn();t.hidden=true};t.appendChild(b)}
   t.hidden=false;clearTimeout(toastT);toastT=setTimeout(()=>t.hidden=true,7000);
 }
 function show(v){
   ui.view=v;
-  for(const x of ["dashboard","kaarten"]){$("#view-"+x).hidden=x!==v;$("#tab-"+x).setAttribute("aria-selected",String(x===v))}
+  for(const x of ["dashboard","kaarten"]){$("#view-"+x).hidden=x!==v;$("#tab-"+x).setAttribute("aria-selected",String(x===v));$("#tab-"+x).tabIndex=x===v?0:-1;$("#tab-"+x).setAttribute("aria-controls","view-"+x)}
   if(v==="dashboard")renderDash();else{$("#f-q").value=ui.q;$("#f-noval").checked=ui.noval;renderTable()}
-  if(location.hash!=="#"+v)history.replaceState(null,"","#"+v);
+  if(!/(?:access_token|refresh_token|error_description|type)=/.test(location.hash)&&location.hash!=="#"+v)history.replaceState(null,"","#"+v);
   window.scrollTo(0,0);
 }
 document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>show(b.dataset.view));
+document.querySelector(".tabs").addEventListener("keydown",e=>{if(!["ArrowLeft","ArrowRight","Home","End"].includes(e.key))return;e.preventDefault();const v=e.key==="Home"?"dashboard":e.key==="End"?"kaarten":ui.view==="dashboard"?"kaarten":"dashboard";show(v);$("#tab-"+v).focus()});
 window.addEventListener("hashchange",()=>{const v=location.hash.slice(1);if(["dashboard","kaarten"].includes(v)&&v!==ui.view)show(v)});
 $("#storewarn").hidden=storeOK;
 updateInfo(0);
 show(location.hash==="#kaarten"?"kaarten":"dashboard");
+
+/* Online accounts. Only a publishable browser key is used; SQL RLS enforces ownership. */
+const CLOUD_URL='https://hygbjknpqlaosnrgyvvr.supabase.co';
+const CLOUD_KEY='sb_publishable_w2VQn8daKynzEtvogb5RzA_ZTLNnxmG';
+const cloud={client:null,user:null,version:0,dirty:false,busy:false,ready:false,conflict:false,epoch:0,edit:0,timer:0,refreshing:false,recovery:false};
+const cacheKey=id=>KEY+':account:'+id;
+function localRead(key){try{return JSON.parse(localStorage.getItem(key)||'null')}catch{return null}}
+function localWrite(key,value){try{localStorage.setItem(key,JSON.stringify(value));storeOK=true}catch{storeOK=false}$('#storewarn').hidden=storeOK}
+function persistAccount(){if(cloud.user)localWrite(cacheKey(cloud.user.id),{cards,version:cloud.version,dirty:cloud.dirty})}
+function cloudMessage(text,error=false){const s=$('#save-state');s.textContent=text;s.classList.toggle('error',error);$('#cloud-status').textContent=text}
+function collectionLock(locked){$('#collection-content').inert=locked;$('#collection-content').setAttribute('aria-busy',String(locked));$('#cloud-retry').hidden=!locked||!cloud.user}
+function repaint(){resetFilters();renderTable();renderDash();updateInfo()}
+function accountUI(){
+ $('#account-name').textContent=cloud.user?cloud.user.email:'Lokale collectie';
+ $('#account-description').textContent=cloud.user?'Je collectie is gekoppeld aan dit account.':'Log in om je kaarten op telefoon en pc terug te zien. Je bestaande lokale kaarten blijven bewaard.';
+ $('#account-login').hidden=!!cloud.user;$('#account-logout').hidden=!cloud.user;
+ $('#account-refresh').hidden=!cloud.user;$('#account-migrate').hidden=!cloud.user||!(localRead(KEY)||[]).length||!!localRead(cacheKey(cloud.user?.id)+':migrated');
+ $('#cloud-conflict').hidden=!cloud.conflict;
+}
+function canEdit(){return cloud.ready}
+function saveCollection(){
+ if(!canEdit())return;
+ if(!cloud.user){localWrite(KEY,cards);cloudMessage(storeOK?'Opgeslagen op dit apparaat':'Lokale opslag mislukt: maak een back-up',!storeOK);return}
+ cloud.edit++;cloud.dirty=true;persistAccount();
+ cloudMessage(cloud.conflict?'Verschillende versies: kies hieronder welke je bewaart':navigator.onLine?'Wijzigingen worden opgeslagen…':'Offline: wijzigingen wachten op synchronisatie',cloud.conflict);
+ clearTimeout(cloud.timer);cloud.timer=setTimeout(()=>syncCollection(),600);
+}
+function readableError(err){
+ const m=String(err?.message||err||'Onbekende fout');
+ if(/TCG_CONFLICT|40001/.test(m)||err?.code==='40001')return 'conflict';
+ if(/Invalid login credentials/i.test(m))return 'E-mailadres of wachtwoord klopt niet.';
+ if(/Email not confirmed/i.test(m))return 'Bevestig eerst je e-mailadres via de ontvangen e-mail.';
+ if(/email_address_not_authorized|Email address.*not authorized|only send.*team|not authorized.*email/i.test(m))return 'Supabase kan momenteel alleen testmails naar projectleden sturen. Gebruik eerst je Supabase-accountadres; voor andere gebruikers moet de beheerder een e-maildienst instellen.';
+ if(/rate.limit|too many|email rate/i.test(m))return 'Te veel pogingen. Wacht even en probeer opnieuw.';
+ if(/Failed to fetch|NetworkError|network|fetch/i.test(m))return 'Geen verbinding. Je wijzigingen blijven op dit apparaat bewaard.';
+ if(/tcg_collections|tcg_save_collection|schema cache|permission denied/i.test(m))return 'De online opslag is nog niet ingesteld. Voer eerst het meegeleverde SQL-blok uit in Supabase.';
+ return m;
+}
+async function fetchCollection(){
+ const {data,error}=await cloud.client.from('tcg_collections').select('cards,version').eq('user_id',cloud.user.id).maybeSingle();
+ if(error)throw error;return data||{cards:[],version:0};
+}
+function setConflict(){cloud.conflict=true;persistAccount();accountUI();cloudMessage('Andere wijzigingen online gevonden. Je eigen versie blijft hier bewaard.',true)}
+async function syncCollection(){
+ if(!cloud.user||!cloud.ready||!cloud.dirty||cloud.busy||cloud.refreshing||cloud.conflict||!navigator.onLine)return;
+ cloud.busy=true;const epoch=cloud.epoch,edit=cloud.edit,snapshot=JSON.parse(JSON.stringify(cards));
+ cloudMessage('Online opslaan…');
+ try{
+  const {data,error}=await cloud.client.rpc('tcg_save_collection',{p_cards:snapshot,p_expected_version:cloud.version});
+  if(epoch!==cloud.epoch)return;if(error)throw error;
+  const row=Array.isArray(data)?data[0]:data;if(!row||!Number.isFinite(Number(row.version)))throw new Error('Geen bevestiging van de online opslag ontvangen.');
+  cloud.version=Number(row.version);cloud.dirty=edit!==cloud.edit;persistAccount();
+  cloudMessage(cloud.dirty?'Nieuwe wijzigingen wachten op synchronisatie':'Online opgeslagen');
+ }catch(err){if(epoch!==cloud.epoch)return;if(readableError(err)==='conflict')setConflict();else cloudMessage(readableError(err),true)}
+ finally{if(epoch===cloud.epoch){cloud.busy=false;if(cloud.dirty&&!cloud.conflict)clearTimeout(cloud.timer),cloud.timer=setTimeout(()=>syncCollection(),5000)}}
+}
+async function activateAccount(user){
+ if(cloud.ready&&cloud.user?.id===user?.id)return;
+ const epoch=++cloud.epoch;clearTimeout(cloud.timer);cloud.user=user;cloud.ready=false;cloud.busy=false;cloud.refreshing=false;cloud.conflict=false;cloud.edit=0;cloud.version=0;cloud.dirty=false;
+ $('#toast').hidden=true;collectionLock(true);accountUI();
+ if(!user){cards=load();cloud.ready=true;collectionLock(false);repaint();cloudMessage('Opgeslagen op dit apparaat');return}
+ cards=[];repaint();cloudMessage('Je online collectie laden…');
+ const cached=localRead(cacheKey(user.id));
+ try{
+  const remote=await fetchCollection();if(epoch!==cloud.epoch)return;
+  if(cached?.dirty&&Array.isArray(cached.cards)){
+   cards=cached.cards.map(norm);cloud.version=Number(cached.version)||0;cloud.dirty=true;
+   if(cloud.version!==Number(remote.version))setConflict();
+  }else{cards=remote.cards.map(norm);cloud.version=Number(remote.version);}
+  cloud.ready=true;collectionLock(false);repaint();persistAccount();accountUI();
+  if(!cloud.conflict)cloudMessage(cloud.dirty?'Lokale wijzigingen worden bijgewerkt':'Online collectie geladen');
+  if(cloud.dirty&&!cloud.conflict)await syncCollection();
+ }catch(err){
+  if(epoch!==cloud.epoch)return;
+  if(cached&&Array.isArray(cached.cards)){cards=cached.cards.map(norm);cloud.version=Number(cached.version)||0;cloud.dirty=!!cached.dirty;cloud.ready=true;collectionLock(false);repaint()}
+  cloudMessage(readableError(err),true);$('#cloud-retry').hidden=false;
+ }
+}
+async function refreshCollection(){
+ if(!cloud.user||!cloud.ready||cloud.busy||cloud.refreshing||cloud.conflict)return;
+ if(cloud.dirty){await syncCollection();return}
+ const epoch=cloud.epoch,edit=cloud.edit;cloud.refreshing=true;
+ try{const remote=await fetchCollection();if(epoch!==cloud.epoch)return;
+  if(cloud.edit!==edit||cloud.dirty){if(Number(remote.version)!==cloud.version)setConflict();return}
+  if(Number(remote.version)!==cloud.version){
+   const focused=document.activeElement;if(focused?.closest?.('#tbody'))return;
+   cards=remote.cards.map(norm);cloud.version=Number(remote.version);persistAccount();renderTable();renderDash();updateInfo();cloudMessage('Online collectie bijgewerkt');
+  }
+ }catch(err){if(epoch===cloud.epoch)cloudMessage(readableError(err),true)}
+ finally{if(epoch===cloud.epoch){cloud.refreshing=false;if(cloud.dirty&&!cloud.conflict)syncCollection()}}
+}
+function openAuth(mode='login'){
+ cloud.recovery=mode==='recovery';$('#auth-mode').value=mode;$('#auth-title').textContent=mode==='recovery'?'Nieuw wachtwoord kiezen':'Inloggen of account maken';
+ $('#auth-email-wrap').hidden=cloud.recovery;$('#auth-email').required=!cloud.recovery;$('#auth-password').required=true;
+ $('#auth-password').value='';$('#auth-password').minLength=mode==='login'?1:8;
+ $('#auth-password').autocomplete=mode==='login'?'current-password':'new-password';
+ $('#auth-submit').textContent=mode==='recovery'?'Wachtwoord opslaan':'Inloggen';
+ $('#auth-signup').hidden=cloud.recovery;$('#auth-forgot').hidden=cloud.recovery;$('#auth-message').textContent='';
+ if(!$('#auth-dialog').open)$('#auth-dialog').showModal();
+}
+async function authAction(mode){
+ const email=$('#auth-email').value.trim(),password=$('#auth-password').value;
+ if(mode!=='recovery'&&!$('#auth-email').reportValidity())return;
+ if(mode!=='forgot'&&(password.length<(mode==='login'?1:8))){$('#auth-message').textContent='Gebruik voor een nieuw account of wachtwoord minimaal 8 tekens.';return}
+ const buttons=[...document.querySelectorAll('#auth-form button')];buttons.forEach(b=>b.disabled=true);$('#auth-message').textContent='Even geduld…';
+ try{
+  let result;const redirect=location.origin+location.pathname;
+  if(mode==='signup')result=await cloud.client.auth.signUp({email,password,options:{emailRedirectTo:redirect}});
+  else if(mode==='forgot')result=await cloud.client.auth.resetPasswordForEmail(email,{redirectTo:redirect});
+  else if(mode==='recovery')result=await cloud.client.auth.updateUser({password});
+  else result=await cloud.client.auth.signInWithPassword({email,password});
+  if(result.error)throw result.error;
+  if(mode==='forgot')$('#auth-message').textContent='Als er een account bestaat, ontvang je een e-mail om je wachtwoord te herstellen.';
+  else if(mode==='signup'&&!result.data.session)$('#auth-message').textContent='Controleer je e-mail en bevestig je account. Daarna kun je hier inloggen.';
+  else{$('#auth-dialog').close();$('#auth-password').value='';cloud.recovery=false;if(mode==='recovery')toast('Je wachtwoord is aangepast.')}
+ }catch(err){$('#auth-message').textContent=readableError(err)}finally{buttons.forEach(b=>b.disabled=false)}
+}
+async function initCloud(){
+ if(!window.supabase){cloud.ready=true;collectionLock(false);cloudMessage('Online dienst niet geladen. Je kunt lokaal werken en later opnieuw proberen.',true);return}
+ cloud.client=window.supabase.createClient(CLOUD_URL,CLOUD_KEY);
+ cloud.client.auth.onAuthStateChange((event,session)=>{setTimeout(()=>{
+  if(event==='PASSWORD_RECOVERY'){openAuth('recovery');activateAccount(session?.user||null)}
+  else activateAccount(session?.user||null);
+ },0)});
+ try{const {data,error}=await cloud.client.auth.getSession();if(error)throw error;await activateAccount(data.session?.user||null)}
+ catch(err){cloud.ready=true;collectionLock(false);cloudMessage(readableError(err),true)}
+}
+$('#account-login').onclick=()=>cloud.client?openAuth():location.reload();
+$('#auth-close').onclick=()=>{$('#auth-dialog').close();$('#auth-password').value=''};
+$('#auth-form').onsubmit=e=>{e.preventDefault();authAction($('#auth-mode').value)};
+$('#auth-signup').onclick=()=>authAction('signup');$('#auth-forgot').onclick=()=>authAction('forgot');
+$('#account-logout').onclick=async()=>{
+ if(cloud.busy){toast('Wacht even tot het opslaan klaar is.');return}
+ if(cloud.dirty&&!confirm('Er zijn wijzigingen die nog niet online staan. Ze blijven op dit apparaat bewaard voor dit account. Toch uitloggen?'))return;
+ const {error}=await cloud.client.auth.signOut({scope:'local'});if(error){toast(readableError(error));return}await activateAccount(null);
+};
+$('#account-refresh').onclick=()=>refreshCollection();
+$('#cloud-retry').onclick=()=>{if(cloud.user&&!cloud.ready)activateAccount(cloud.user);else if(cloud.dirty)syncCollection();else refreshCollection()};
+$('#account-migrate').onclick=()=>{
+ if(!canEdit()||!cloud.user||cloud.conflict)return;const legacy=localRead(KEY);if(!Array.isArray(legacy)||!legacy.length)return;
+ if(!confirm(`${legacy.length} lokale kaarten toevoegen aan ${cloud.user.email}? Doe dit alleen als deze kaarten van jou zijn. Je online kaarten blijven behouden.`))return;
+ const ids=new Set(cards.map(c=>c.id));const incoming=legacy.map(norm).filter(c=>!ids.has(c.id));cards=[...incoming,...cards];save();localWrite(cacheKey(cloud.user.id)+':migrated',true);repaint();accountUI();toast(`${incoming.length} lokale kaarten aan je account toegevoegd.`);
+};
+$('#conflict-backup').onclick=()=>download(`tcg-lokale-versie-${today()}.json`,JSON.stringify({app:'tcg-tracker',version:1,cards},null,2),'application/json');
+function conflictBusy(busy){collectionLock(busy||!cloud.ready);for(const id of ['conflict-backup','conflict-online','conflict-local'])$('#'+id).disabled=busy}
+$('#conflict-online').onclick=async()=>{
+ if(!confirm('De online versie laden? Je huidige versie wordt eerst als JSON-back-up gedownload.'))return;
+ $('#conflict-backup').click();const epoch=cloud.epoch;conflictBusy(true);
+ try{const remote=await fetchCollection();if(epoch!==cloud.epoch)return;cards=remote.cards.map(norm);cloud.version=Number(remote.version);cloud.dirty=false;cloud.conflict=false;persistAccount();repaint();accountUI();cloudMessage('Online versie geladen')}catch(err){toast(readableError(err))}finally{if(epoch===cloud.epoch)conflictBusy(false)}
+};
+$('#conflict-local').onclick=async()=>{
+ if(!confirm('Je huidige versie online opslaan? Dit vervangt de online collectie van dit account. De online versie wordt eerst als back-up gedownload.'))return;
+ const epoch=cloud.epoch;conflictBusy(true);
+ try{const remote=await fetchCollection();if(epoch!==cloud.epoch)return;download(`tcg-online-versie-${today()}.json`,JSON.stringify({app:'tcg-tracker',version:1,cards:remote.cards},null,2),'application/json');cloud.version=Number(remote.version);cloud.conflict=false;cloud.dirty=true;persistAccount();accountUI();await syncCollection()}catch(err){toast(readableError(err))}finally{if(epoch===cloud.epoch)conflictBusy(false)}
+};
+window.addEventListener('online',()=>cloud.ready?(cloud.dirty?syncCollection():refreshCollection()):cloud.user&&activateAccount(cloud.user));
+window.addEventListener('offline',()=>{if(cloud.user)cloudMessage(cloud.dirty?'Offline: wijzigingen wachten op synchronisatie':'Offline: je ziet de laatst geladen collectie')});
+window.addEventListener('beforeunload',e=>{if(cloud.dirty){persistAccount();e.preventDefault();e.returnValue=''}});
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')refreshCollection()});
+setInterval(()=>{if(document.visibilityState==='visible')refreshCollection()},30000);
+accountUI();collectionLock(true);window.addEventListener("DOMContentLoaded",initCloud,{once:true});
+
 </script>
 </body>
 </html>
